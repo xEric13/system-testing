@@ -57,7 +57,7 @@ z-index:1000;
 }
 
 .main-menu>ul {
-margin:7px 0;
+margin:20px 0;
 }
 
 .main-menu li {

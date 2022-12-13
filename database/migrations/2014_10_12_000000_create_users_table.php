@@ -13,8 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table ) {
-            $table->id();
+        Schema::create('users', function (Blueprint $table) {
+            $table->string('id');
+            $table->string('studentId')->primary();
             $table->string('familyName');
             $table->string('firstName');
             $table->string('middleInitial');

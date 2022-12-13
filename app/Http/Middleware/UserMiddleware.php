@@ -27,7 +27,7 @@ class UserMiddleware
 
             } else {
 
-                return redirect('/dashboard')->with('message', 'Access denied! You are not an Admin!');
+                return redirect('/home')->with('message', 'Access denied! You are not an Admin!');
 
             }
 

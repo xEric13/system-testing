@@ -4,7 +4,7 @@
 <style>
   
 </style>
-<div class="container">
+<div class="container card">
 
     <div class="row d-flex align-items-center">
         <div class="col-3 p-2">

@@ -15,11 +15,30 @@
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
+<style>
+    body{
+        background-image: url('/img/bg2.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 0;
+        position: relative;
+        height: 100%;
+        /* https://img.freepik.com/free-vector/yellow-background-with-circular-shapes_1017-37576.jpg?w=1380&t=st=1669492017~exp=1669492617~hmac=9500417cd92c09b10c0d918c92b0233103c22b9efe5e193293f2d4af7b053db5' */
+        background-size: cover;
+        overflow: auto;
+        font-family: $openSans;
+    }
+    .card{
+        box-shadow: 2px 1px 15px 5px #383737;
+        
+        background-color: #ededed95
+    }
+</style>
 <body>
     <div id="app">
-        <nav style="background-color:#2b2b74;" class="navbar navbar-expand-md navbar-light shadow-sm"  >
+        <nav style="background-color:#2b2b74;" class="navbar navbar-expand-md navbar-light shadow-sm sticky-top"  >
             <div class="container">
-                <a class="navbar-brand d-flex" href="{{ url('/') }}">
+                <a class="navbar-brand d-flex" href="{{ url('/home') }}">
                         <div class="">
                             <img src="/img/logo.png" style="height: 30px; border-right: 2px solid #333; margin: 0px 15px 0px 0px; padding: 0px 15px 0px 0px; " class="pr-3">
                         </div>
@@ -55,7 +74,7 @@
                         @else
                             <li st class="nav-item dropdown">
                                 <a style="color: white" id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->familyName }}
+                                {{ Auth::user()->familyName  }}
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">

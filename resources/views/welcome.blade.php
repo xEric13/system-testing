@@ -9,14 +9,18 @@
 </head>
 <style>
     body{
+        background-image: url('/img/bg2.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         margin: 0;
         position: relative;
         height: 100%;
-        background-image: url('https://img.freepik.com/free-vector/yellow-background-with-circular-shapes_1017-37576.jpg?w=1380&t=st=1669492017~exp=1669492617~hmac=9500417cd92c09b10c0d918c92b0233103c22b9efe5e193293f2d4af7b053db5');
+        /* https://img.freepik.com/free-vector/yellow-background-with-circular-shapes_1017-37576.jpg?w=1380&t=st=1669492017~exp=1669492617~hmac=9500417cd92c09b10c0d918c92b0233103c22b9efe5e193293f2d4af7b053db5' */
         background-size: cover;
         overflow: auto;
         font-family: $openSans;
     }
+    
     .header{
         flex-wrap: wrap;
         text-align: center;
@@ -31,7 +35,7 @@
         flex-wrap: wrap;
         text-align: center;
         padding: 10px;
-        background-color: #f9ce00;
+        background-color: #003366;
         margin: 0;
     }
     .content{

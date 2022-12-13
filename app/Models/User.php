@@ -18,6 +18,7 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
+        'studentId',
         'familyName',
         'firstName',
         'middleInitial',
@@ -45,6 +46,11 @@ class User extends Authenticatable
         'remember_token',
     ];
 
+
+    protected $primary = [
+        'id',
+        'studentId'
+    ];
     /**
      * The attributes that should be cast.
      *

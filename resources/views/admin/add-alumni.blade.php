@@ -13,7 +13,7 @@
     crossorigin="anonymous">
 </head>
 <body>
-    <div class="container" style="margin-top: 20px">
+    <div class="container card" style="margin-top: 20px">
         <div class="row">
             <div class="col-md-12">
                 <h2>Add Alumni</h2>

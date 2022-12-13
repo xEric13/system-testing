@@ -33,13 +33,12 @@ Route::prefix('admin')->middleware(['auth', 'isAdmin'])->group(function(){
 
 
 //user
-Route::prefix('user')->middleware(['auth', 'isUser'])->group(function(){
-    Route::get('/home', [App\Http\Controllers\HomeController::class, 'home']);
-});
 
-Route::view('/frontpage', 'frontpage');
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'home']);
-Route::get('/occupationalform', [App\Http\Controllers\HomeController::class, 'occupationalform']);
+    // Route::get('/home', [App\Http\Controllers\HomeController::class, 'home']);
+
+// Route::view('/frontpage', 'frontpage');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'home']);
+// Route::get('/occupationalform', [App\Http\Controllers\HomeController::class, 'occupationalform']);
 
 
 
